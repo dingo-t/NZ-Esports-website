@@ -1,0 +1,41 @@
+h1 {
+    font-size: 100px;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-cont {
+    width: 100vw;
+}
+
+.news-section, .gaming-section, .scams-section {
+    height: 300px;
+    
+}
+
+.news-text-cont, .gaming-text-cont, .scams-text-cont {
+    width: 800px;
+    margin-left: 50%;
+}
+
+.news-img, .gaming-img, .scams-img {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: -190px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+
+
+
+img {
+    width: 500px;
+    height: 300px;
+}

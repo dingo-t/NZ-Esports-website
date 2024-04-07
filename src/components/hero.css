@@ -1,0 +1,43 @@
+.container {
+    width: 100vw;
+    height: 1000px;
+}
+
+.background-image {
+  position: relative;
+  top: 300px;
+}
+
+.background-image img{
+    width: 100%;
+}
+
+.text-cont {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.body-cont {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    top: 200px;
+}
+
+.title-cont {
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
