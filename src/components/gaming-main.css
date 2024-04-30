@@ -1,0 +1,26 @@
+.gaming-main-cont {
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.gaming-main-cont h1{
+    color: white;
+    font-size: 120px;
+}
+
+.gaming-main-cont h2{
+    color: white;
+    font-size: 30px;
+}
+
+.main-text-cont {
+
+}
+
+.gaming-main-text {
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}

@@ -1,0 +1,79 @@
+.navbar {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    padding: 15px;
+    list-style: none;
+    z-index: 9999;
+    height: 90px;
+}
+  
+.navbar-container {
+    position: relative;
+    padding: 0 22vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.navbar-container, .nav-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.nav-button-container {
+    margin-left: 30vw;
+    margin-right: 1vw;
+    margin-bottom: 30px;
+}
+  
+.nav-links, .navbar-logo {
+    text-decoration: none;
+    color: aliceblue;
+}
+  
+.nav-item {
+    margin-left: .5vw;
+    margin-right: .5vw;
+}
+  
+.nav-links:hover, .navbar-logo:hover {
+    color: #8a8a8a;
+    transition: 500ms ease-in-out;
+}
+  
+.nav-links {
+    font-size: 1.6rem;
+    font-family: 'PT Sans', 'Roboto', 'sans-serif';
+}
+  
+.nav-sign-up {
+    margin-left: 5vw;
+    margin-right: 7vw;
+}
+  
+.menu-button {
+    display: none;
+}
+  
+.navbar-logo {
+    position: relative;
+    right: 100px;
+}
+
+#netsafe-logo {
+    height: 70px;
+    width: 180px;
+    margin-right: 0px;
+}
+ 
+#esports-logo {
+    height: 120px;
+    width: 130px;
+}
+  
+.navbar-container {
+    padding: 0 20vw;
+}
+  

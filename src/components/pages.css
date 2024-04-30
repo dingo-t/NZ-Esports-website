@@ -1,41 +1,41 @@
-h1 {
-    font-size: 100px;
-    color: aliceblue;
-    font-family: "Roboto", sans-serif;
-}
-
-h2 {
-    font-size: 20px;
-    color: aliceblue;
-    font-family: "Roboto", sans-serif;
-}
-
 .section-cont {
-    width: 100vw;
+    width: 100%;
+}
+
+.section-cont h1{
+    color: black;    
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-cont h2{
+    color: black;    
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
 }
 
 .news-section, .gaming-section, .scams-section {
     height: 300px;
-    
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .news-text-cont, .gaming-text-cont, .scams-text-cont {
-    width: 800px;
-    margin-left: 50%;
+    width: 900px;
 }
 
-.news-img, .gaming-img, .scams-img {
+.news-img img, .gaming-img img, .scams-img img{
     width: 500px;
-    height: 300px;
+    height: 280px;
     position: relative;
-    top: -190px;
-    margin-bottom: 50px;
-    margin-left: 70px;
-}
+    margin-left: 0px;
+    margin-top: 10px;
+} 
 
 
 
-img {
-    width: 500px;
-    height: 300px;
-}
+
+
+

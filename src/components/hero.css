@@ -1,5 +1,5 @@
 .container {
-    width: 100vw;
+    width: 100%;
     height: 1000px;
 }
 
@@ -10,6 +10,7 @@
 
 .background-image img{
     width: 100%;
+    height: 700px;
 }
 
 .text-cont {
@@ -30,13 +31,13 @@
     text-align: center;
 }
 
-h1 {
+.title-cont h1 {
     font-size: 100px;
     color: aliceblue;
     font-family: "Roboto", sans-serif;
 }
 
-h2 {
+.body-cont h2 {
     font-size: 20px;
     color: aliceblue;
     font-family: "Roboto", sans-serif;

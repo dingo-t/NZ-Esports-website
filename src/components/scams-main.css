@@ -1,0 +1,18 @@
+
+.main-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.main-text {
+    width: 1000px;
+    margin-top: 80px;
+}
+
+.main-text h2 {
+    color: aliceblue;
+}
+
+#top-cont {
+    height: 550px;
+}

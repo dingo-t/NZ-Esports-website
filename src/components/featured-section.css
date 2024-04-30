@@ -1,0 +1,47 @@
+.container {
+    top: 120px;
+    position: relative;
+}
+
+.title {
+   
+}
+
+.title h1, .sub-title h1  {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.title h1 {
+    font-size: 150px;
+}
+
+.sub-title h1 {
+    font-size: 80px;
+}
+
+.featured-cards {
+    display: flex;
+    margin-top: 100px;
+}
+
+.card {
+    text-align: center;
+    background-color: aliceblue;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+.card h1 {
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.card p {
+    font-size: 30px;
+    font-weight: 1000;
+}
+
