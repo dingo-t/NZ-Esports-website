@@ -9,10 +9,8 @@ function ScamsMain() {
         <div className='title'><h1>Scams</h1></div>
         <div className='main-cont'>
             <div className='main-text'>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
+                <h2>In this digital age, staying vigilant against online scams is crucial. Scams can come is many different forms and can have major consequences if fallen for. 
+                  In this section we will look at common scams and general rules for being safe.</h2>
             </div>
             <div className='main-img'><img src='https://i.postimg.cc/7YN3Gvyw/Esports-minor-launched-at-Uo-W-1.jpg'></img></div>
         </div>

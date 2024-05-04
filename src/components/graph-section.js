@@ -1,69 +1,152 @@
-import { Chart as ChartJS, defaults } from "chart.js/auto";
+import { Chart as ChartJS,  Legend,  Title,  defaults, plugins } from "chart.js/auto";
 import { Bar, Doughnut, Line } from "react-chartjs-2";
 import React, { useState, createContext, useEffect } from 'react';
 import './graph-section.css'; 
-import ScamData from '../data/scam-data.json';
-
-
-let btnCount = 0;
+// import ScamData from '../data/scam-data.json';
 
 
 function Graph() {
 
-  const [chartData, setChartData] = useState({
-    labels: ['A', 'B', 'C', 'D', 'E'],
-    datasets: [
-      {
-        label: 'Initial Data',
-        data: [12, 19, 3, 5, 2],
-        backgroundColor: [
-            'rgba(55, 99, 132, 0.2)',
-            'rgba(55, 159, 64, 0.2)',
-            'rgba(55, 205, 86, 0.2)',
-            'rgba(5, 192, 192, 0.2)',
-            'rgba(14, 162, 235, 0.2)',
-          ],
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1,
+  const [data, setData] = useState('');
+  const [ageArray, setageArray] = useState('');
+  const [hoursArray, sethoursArray] = useState('');
 
-      },
-    ],
-  });
-
-
-  const updateData = () => {
+  useEffect(() => {
     
-    btnCount = btnCount + 1
+    const fetchData = async () => {
+      try {
 
-    if (btnCount > 1) window.location.reload();
- 
-    console.log(btnCount)
-    setChartData({
-      labels: ['F', 'G', 'H', 'I', 'J'],
+        const response = await fetch('http://localhost/surveyFetch.php');
+
+        const responseData = await response.json();
+
+        setData(responseData);
+
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+
+    };
+
+    fetchData();
+
+    }, []);
+
+    function calculateAverageHours(data) {
+      // Check if data is an array
+      if (!Array.isArray(data)) {
+        return {};
+      }
+    
+      const combinedData = data.reduce((acc, curr) => {
+        const { age, hours } = curr;
+        if (!acc[age]) {
+          acc[age] = { totalHours: 0, count: 0 };
+        }
+        acc[age].totalHours += parseInt(hours);
+        acc[age].count++;
+        return acc;
+      }, {});
+    
+      const averageData = {};
+      for (let age in combinedData) {
+        const totalHours = combinedData[age].totalHours;
+        const count = combinedData[age].count;
+        averageData[age] = totalHours / count;
+      }
+      return averageData;
+    }
+    // gets array of the average gaming hours of each age. 
+    const averageHours = calculateAverageHours(data);
+    console.log(averageHours)
+    
+
+
+    const hourvaluesArray = Object.values(averageHours);
+    console.log(hourvaluesArray); 
+    
+    const ageKeysArray = Object.keys(averageHours);
+    console.log(ageKeysArray); 
+    
+
+   
+  const [chartData, setChartData] = useState({
+
+      labels: ageKeysArray,
       datasets: [
         {
-          label: 'Updated Data',
-          data: [10, 5, 15, 7, 3],
+          label: '',
+          data: hourvaluesArray,
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 205, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-          ],
-          borderColor: 'rgba(255, 99, 132, 1)',
+              'rgba(55, 99, 132, 0.2)',
+              'rgba(55, 159, 64, 0.2)',
+              'rgba(155, 205, 86, 0.2)',
+            ],
+          borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
         },
       ],
-    });
-  };
+
+  });
+
+  setTimeout(() => {
+
+    setChartData({
+      labels: ageKeysArray,
+      datasets: [
+        {
+          label: 'Hours',
+          data: hourvaluesArray,
+          backgroundColor: [
+              'rgba(55, 99, 132, 0.2)',
+              'rgba(55, 159, 64, 0.2)',
+              'rgba(155, 205, 86, 0.2)',
+            ],
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
+        },
+      ],
+    })
+
+}, 500);
+
+const options = {
+    plugins: {
+      title: {
+        display: true,
+        text: "Average Hours spent playing video games daily",
+      },
+      legend: {
+        display: false,
+      }
+    },
+    scales: {
+      y: {
+        title: {
+          display: true,
+          text: 'Hours',
+          font: {
+            size: 16,
+            weight: 'bold'
+          }
+        }
+      },
+      x: {
+        title: {
+          display: true,
+          text: 'Age',
+          font: {
+            size: 16,
+            weight: 'bold'
+          }
+        }
+      }
+    }
+}
 
   return (
-    <div>
     <div className="graph-container">
-      <Bar data={chartData} />
-      <button id='graph-update-btn' onClick={updateData}>Update Data</button>
-    </div>
+      <Bar data={chartData} options={options}/>
     </div>
   );
 };

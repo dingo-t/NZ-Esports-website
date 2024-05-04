@@ -11,12 +11,14 @@
 .background-image img{
     width: 100%;
     height: 700px;
+    z-index: -5;
 }
 
 .text-cont {
     position: absolute;
     top: 150px;
     width: 100%;
+    
 }
 
 .body-cont {
@@ -25,6 +27,7 @@
     margin-left: 25%;
     position: absolute;
     top: 200px;
+    margin-bottom: 0;
 }
 
 .title-cont {
@@ -34,11 +37,14 @@
 .title-cont h1 {
     font-size: 100px;
     color: aliceblue;
-    font-family: "Roboto", sans-serif;
+    z-index: -1;
 }
 
 .body-cont h2 {
     font-size: 20px;
     color: aliceblue;
-    font-family: "Roboto", sans-serif;
+}
+
+#hero-title {
+    margin-top: 0px;
 }

@@ -8,13 +8,9 @@ function GamingMain() {
     <div className='gaming-main-cont'>
         <div className='main-text-cont'>
             <div className='gaming-main-title'><h1>Healthy Gaming</h1></div>
-            <div className='gaming-main-text'><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnat.Lorem 
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnat.</h2></div>
+            <div className='gaming-main-text'><h2>Gaming can be a positive and enjoyable activity. It can help us to connect with other people. Healthy gaming can help us to enjoy our downtime, relax and have fun.
+                                                  But gaming, like any behaviour, can cause harm if it is taken to extreme levels. The graph below shows the average daily time spend gaming for New Zealand youth.  </h2></div>
         </div>
-
-
-
-
     </div>
   );
 }

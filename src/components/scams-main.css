@@ -1,11 +1,12 @@
 
 .main-cont {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .main-text {
-    width: 1000px;
+    width: 60%;
     margin-top: 80px;
 }
 
@@ -15,4 +16,29 @@
 
 #top-cont {
     height: 550px;
+    margin-bottom: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-text {
+        font-size: 10px;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .title h1{
+        font-size: 120px;
+    }
+    .main-img img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #top-cont {
+        margin-bottom: 300px;
+    }
 }

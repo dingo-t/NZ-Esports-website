@@ -1,17 +1,19 @@
 .section-cont {
     width: 100%;
+    z-index: 50;
+    margin-top: 100px;
+    bottom: 1px;
+    position: relative;
 }
 
 .section-cont h1{
     color: black;    
     font-size: 60px;
-    font-family: "Roboto", sans-serif;
 }
 
 .section-cont h2{
     color: black;    
     font-size: 25px;
-    font-family: "Roboto", sans-serif;
 }
 
 .news-section, .gaming-section, .scams-section {
@@ -33,9 +35,6 @@
     margin-left: 0px;
     margin-top: 10px;
 } 
-
-
-
 
 
 

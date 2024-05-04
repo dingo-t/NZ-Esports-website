@@ -1,5 +1,5 @@
 .body-container h1,.body-container h2{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 .top-section, .lower-section {
@@ -10,14 +10,34 @@
 
 .body-container {
     margin-top: 200px;
+    background-color: black;
 }
 
 .top-text-cont, .lower-text-cont {
     width: 900px;
 }
 
-.top-img-cont, .lower-img-cont {
-    
+.top-img-cont img, .lower-img-cont img{
+    width: 600px;
 }
 
-  
+@media screen and (max-width: 1000px) {
+    .top-img-cont img, .lower-img-cont img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .top-img-cont img, .lower-img-cont img{
+        width: 300px;
+    }
+    .top-section, .lower-section {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .top-text-cont, .lower-text-cont {
+        width: 100%;
+        font-size: 10px;
+    }
+}

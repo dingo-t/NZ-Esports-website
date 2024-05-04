@@ -8,7 +8,6 @@ function Scams() {
   return (
     <>
       <ScamsMain></ScamsMain>
-      <Graph></Graph>
       <ScamsBody></ScamsBody>
     </>
   );

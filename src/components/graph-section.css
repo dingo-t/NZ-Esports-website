@@ -1,17 +1,7 @@
 .graph-container {
     position: relative;
-    top: 120px;
-    height: 80vh;
-    background-color: aliceblue;
+    background-color: rgb(255, 207, 207);
+    top: 200px;
 }
 
-#graph-update-btn {
-   
-        padding: 8px 20px;
-        font-size: 20px;
-        width: 140px;
-        font-family: 'Bebas Neue', sans-serif;
-        
-        border-radius: 2px;
-        background-color:blanchedalmond;
-}
+

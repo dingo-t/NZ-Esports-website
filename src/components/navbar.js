@@ -15,7 +15,6 @@ function Navbar() {
               <Link to='/' className='navbar-logo'>
                   <img id='esports-logo' src='../images/NZ-Esports_Logo_White-1024x1024.png'></img>
               </Link>
-
             <div className='nav-button-container'>
               <li className='nav-item'>
                 <Link to='/' className='nav-links' >
