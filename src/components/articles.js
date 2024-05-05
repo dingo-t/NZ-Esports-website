@@ -57,7 +57,7 @@ function Articles() {
             {data.map(item => (
                 <div key={item.id} className='article'>
                     <h2>{item.title}</h2>
-                    <img src={item.image} alt={item.title} />
+                    <img loading='lazy' src={item.image} alt={item.title} />
                     <p>{item.body}</p>
                     <Link to={item.link} className='nav-button'>Read</Link>
                 </div>

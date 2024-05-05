@@ -38,13 +38,13 @@
 }
 
 .card h1 {
-    font-weight: 100;
+    font-weight: 1000;
     font-size: 47px;
 }
 
 .card p {
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: 0;
 }
 
 .featured-link {

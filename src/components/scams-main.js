@@ -12,7 +12,7 @@ function ScamsMain() {
                 <h2>In this digital age, staying vigilant against online scams is crucial. Scams can come is many different forms and can have major consequences if fallen for. 
                   In this section we will look at common scams and general rules for being safe.</h2>
             </div>
-            <div className='main-img'><img src='../images/banknotes.jpg'></img></div>
+            <div className='main-img'><img alt='photo of banknotes' loading='lazy'src='../images/banknotes.jpg'></img></div>
         </div>
     </div>
   );

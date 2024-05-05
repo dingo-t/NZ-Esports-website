@@ -7,6 +7,7 @@
 
 .tips-title-cont {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .tips-body-cont {
@@ -24,16 +25,22 @@
 }
 
 .top-row {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
-.tip-elem {
-
+.bottom-row {
+    margin-bottom: 100px;
+}
+.tip-elem-title {
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 750px) {
     .top-row, .bottom-row {
         flex-direction: column;
         margin-bottom: 0px;
+    }
+    .tip-elem {
+        margin-bottom: 50px;
     }
 }
