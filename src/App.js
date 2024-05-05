@@ -19,7 +19,7 @@ function App() {
       <>
         {/*The routing for each page is handled here */}
         <Router>
-          {/* The Navbar and Footer are outside the Routes so that they are
+          {/* The Navbar is outside the Routes so that they are
            visible regardless of the current path*/}
           <Navbar></Navbar>
           <Routes>
@@ -34,7 +34,6 @@ function App() {
             <Route path='/article5' exact element={<Article5></Article5>}/>
             <Route path='/article6' exact element={<Article6></Article6>}/>
           </Routes>
-      
         </Router>
       </>
  

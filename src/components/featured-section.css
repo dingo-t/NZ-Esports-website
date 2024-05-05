@@ -1,17 +1,17 @@
-.container {
+.featured-section {
     top: 120px;
     position: relative;
+    margin-bottom: 150px;
 }
 
-.title {
-   
+.card-title {
+   margin-bottom: 20px;
 }
 
 .title h1, .sub-title h1  {
     color: aliceblue;
     text-align: center;
     
-
 }
 
 .title h1 {
@@ -32,16 +32,50 @@
     background-color: aliceblue;
     margin-left: 20px;
     margin-right: 20px;
-    height: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
 }
 
 .card h1 {
     font-weight: 100;
-    font-size: 50px;
+    font-size: 47px;
 }
 
 .card p {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 1000;
 }
 
+.featured-link {
+    text-decoration: none;
+    color: black;
+}   
+
+.card:hover {
+    background-color: rgb(109, 109, 109);
+    transition: 500ms ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .featured-cards {
+        position: relative;
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured-section {
+        margin-bottom: 0px;
+    }
+    .card {
+        margin-bottom: 40px;
+        min-width: 570px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        margin-bottom: 40px;
+        min-width: 300px;
+    }
+}

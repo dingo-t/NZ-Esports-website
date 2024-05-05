@@ -2,6 +2,7 @@ import { Chart as ChartJS,  Legend,  Title,  defaults, plugins } from "chart.js/
 import { Bar, Doughnut, Line } from "react-chartjs-2";
 import React, { useState, createContext, useEffect } from 'react';
 import './graph-section.css'; 
+import { color } from "chart.js/helpers";
 // import ScamData from '../data/scam-data.json';
 
 
@@ -75,18 +76,18 @@ function Graph() {
       labels: ageKeysArray,
       datasets: [
         {
-          label: '',
+          label: 'Hours',
           data: hourvaluesArray,
           backgroundColor: [
-              'rgba(55, 99, 132, 0.2)',
-              'rgba(55, 159, 64, 0.2)',
-              'rgba(155, 205, 86, 0.2)',
+              'rgba(248, 144, 5, 0.3)',
+              'rgba(94, 186, 0, 0.3)',
+              'rgba(24, 180, 187, 0.3)',
             ],
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
         },
       ],
-
+  
   });
 
   setTimeout(() => {
@@ -98,9 +99,9 @@ function Graph() {
           label: 'Hours',
           data: hourvaluesArray,
           backgroundColor: [
-              'rgba(55, 99, 132, 0.2)',
-              'rgba(55, 159, 64, 0.2)',
-              'rgba(155, 205, 86, 0.2)',
+              'rgba(248, 144, 5, 0.3)',
+              'rgba(94, 186, 0, 0.3)',
+              'rgba(24, 180, 187, 0.3)',
             ],
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
@@ -115,6 +116,10 @@ const options = {
       title: {
         display: true,
         text: "Average Hours spent playing video games daily",
+        color: 'white',
+        font: {
+          size: 30,
+        }
       },
       legend: {
         display: false,
@@ -125,16 +130,18 @@ const options = {
         title: {
           display: true,
           text: 'Hours',
+          color: 'white',
           font: {
             size: 16,
             weight: 'bold'
-          }
+          } 
         }
       },
       x: {
         title: {
           display: true,
           text: 'Age',
+          color: 'white',
           font: {
             size: 16,
             weight: 'bold'

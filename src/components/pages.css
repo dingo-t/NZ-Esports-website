@@ -36,5 +36,70 @@
     margin-top: 10px;
 } 
 
+.gaming-section {
+    background-color: #012db9;
+}
 
+.scams-section {
+    background-color: #18B4BB;
+}
+.pages-link {
+    text-decoration: none;
+}
 
+.news-section:hover, .gaming-section:hover, .scams-section:hover {
+    background-color: #001a6e;
+    transition: 100ms ease-in-out;
+}
+
+@media screen and (max-width: 1100px) {
+    .news-img img, .gaming-img img, .scams-img img{
+        width: 400px;
+        height: 280px;
+        position: relative;
+        margin-left: 0px;
+        margin-top: 10px;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    .news-img img, .scams-img img{
+        width: 400px;
+        height: 200px;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+    } 
+    .gaming-img img {
+        width: 400px;
+        height: 200px;
+        position: relative;
+        margin-top: 0;
+    }
+    .news-section, .gaming-section, .scams-section {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }    
+    .news-text-cont, .gaming-text-cont, .scams-text-cont {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section-cont h1{
+        color: black;    
+        font-size: 40px;
+    }
+    
+    .section-cont h2{
+        color: black;    
+        font-size: 15px;
+    }
+    .news-img img, .gaming-img img, .scams-img img{
+        width: 370px;
+    }
+}

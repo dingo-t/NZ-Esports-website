@@ -9,10 +9,6 @@
 }
 
 .survey-cont {
-
-}
-
-.survey-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,6 +39,11 @@
     text-align: center;
   }
 
+  .survey-cont button:hover {
+    background-color: #0056b3;
+    transition: 500ms ease-in-out;
+  }
+
   @media screen and (max-width: 700px) {
     .survey-section {
         display: block;
@@ -55,3 +56,4 @@
         margin-bottom: 0px;
     }
 }
+

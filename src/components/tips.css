@@ -1,7 +1,8 @@
 .tips-cont {
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(3, 15, 81, 1);
     top: 199px;
+    color: white;
 }
 
 .tips-title-cont {
@@ -24,6 +25,10 @@
 
 .top-row {
     margin-bottom: 20px;
+}
+
+.tip-elem {
+
 }
 
 @media screen and (max-width: 750px) {

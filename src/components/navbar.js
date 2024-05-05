@@ -7,18 +7,11 @@ function Navbar() {
   return (
       <>
         <nav className='navbar'>
-          {/* The navbar links for when the user has a large screen device */}
           <div className='navbar-container'>
-              <Link to='/' className='navbar-logo'>
-                  <img id='netsafe-logo' src='../images/NetSafe-logo_imagelarge.png'></img>
-              </Link>
-              <Link to='/' className='navbar-logo'>
-                  <img id='esports-logo' src='../images/NZ-Esports_Logo_White-1024x1024.png'></img>
-              </Link>
             <div className='nav-button-container'>
               <li className='nav-item'>
                 <Link to='/' className='nav-links' >
-                  Home
+                  <h2>Home</h2>
                 </Link>
               </li>
               <li className='nav-item'>
@@ -26,7 +19,7 @@ function Navbar() {
                   to='/news'
                   className='nav-links'
                 >
-                  News
+                  <h2>News</h2>
                 </Link>
               </li>
               <li className='nav-item'>
@@ -34,7 +27,7 @@ function Navbar() {
                   to='/gaming'
                   className='nav-links'
                 >
-                  Gaming
+                  <h2>Gaming</h2>
                 </Link>
               </li>  
               <li className='nav-item'>
@@ -42,7 +35,7 @@ function Navbar() {
                   to='/scams'
                   className='nav-links'
                 >
-                  Scams
+                  <h2>Scams</h2>
                 </Link>
               </li>  
             </div>
