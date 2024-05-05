@@ -9,10 +9,10 @@ $username = "root";
 $password = "";
 $dbname = "surveydata";
 
-// Create connection
+// connection is created
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
